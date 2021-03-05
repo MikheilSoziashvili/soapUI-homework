@@ -1246,7 +1246,7 @@ holder.namespaces["m"] = "http://www.oorsprong.org/websamples.countryinfo"
 
 def isoCode = holder.getNodeValue("//m:sISOCode[contains(text(),'GN')]/following-sibling::m:sName")
 
-if (isoCode == ${Properties#CountryByIsoCode}) {
+if (isoCode == 'Guinea') {
 	log.info "passed"
 } else {
 	log.info "failed"
